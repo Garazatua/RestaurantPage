@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css2?family=Fascinate&family=Poiret+One&family=Roboto:ital,wght@0,100..900;1,100..900&family=Carter+One&display=swap');
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+p {
+  text-wrap: pretty;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  text-wrap: balance;
+}
+
+body {
+  font-family: "Carter One";
+}
+
+header {
+  height: 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #0868a7be;
+  margin: 0 2rem;
+  padding: 0 20px 5px 20px;
+  font-weight: 600;
+}
+
+header div:first-child {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-family: "Poiret One", sans-serif;
+  font-size: 1.5rem;
+}
+
+header div:first-child:hover {
+  color: #0867a7dd;
+  cursor: pointer;
+  transform: scale(1.05);
+  transition: all 0.2s ease;
+}
+
+nav {
+  margin-right: 35px;
+}
+
+nav button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #333;
+  font-family: "Poiret One", sans-serif;
+}
+
+nav button:hover {
+  color: #0867a7dd;
+  transform: scale(1.1);
+  transition: all 0.2s ease;
+}
+
+header > button,
+.main-button{
+  background-color: #0868a7be;
+  border-radius: 20px;
+  cursor: pointer;
+  border: none;
+  color: white;
+  font-family: "Carter One";
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+  font-size: 0.95rem;
+  padding: 0.5rem 1rem;
+  transition: all 0.2s ease;
+}
+
+.main-button {
+  font-size: 1.2rem;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+}
+
+header > button:hover,
+.main-button:hover {
+  background-color: #0867a7dd;
+  transform: scale(1.05);
+}
+
+header svg {
+  fill: white;
+  width: 40px;
+  background-color: #0868a7be;
+  padding: 10px;
+  border-radius: 30px;
+}
+
+.hero-container {
+  margin-top: 1rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 0 20px 5px 20px;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.ceviche-image {
+  width: 100%;
+  max-width: 950px;
+  border-radius: 10px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.slogan {
+  font-size: 3.5rem;
+}
+
+.description {
+  font-size: 1.2rem;
+  color: #555;
+  line-height: 1.6;
+  margin-top: -1rem;
+}
+
+
+/* xd */
+.menu-section {
+  margin-top: 3rem;
+  padding: 2rem 1rem;
+  text-align: center;
+  animation: fadeIn 0.5s ease-in-out; 
+}
+
+.menu-title {
+  font-size: 3.5rem;
+  font-family: "Carter One", sans-serif;
+  margin-bottom: 0.5rem;
+  color: black;
+}
+
+.menu-subtitle {
+  font-size: 1.3rem;
+  color: #555;
+  max-width: 600px;
+  margin: 0 auto 2rem;
+  font-family: "Roboto", sans-serif;
+}
+
+.menu-filters {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+.filter-btn {
+  padding: 0.6rem 1.2rem;
+  border-radius: 25px;
+  border: 2px solid #0868a7be;
+  background-color: white;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 1rem;
+  font-family: "Poiret One", sans-serif;
+  transition: all 0.2s ease;
+}
+
+.filter-btn.active,
+.filter-btn:hover {
+  background-color: #0868a7be;
+  color: white;
+}
+
+.menu-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.menu-card {
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+  width: 250px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+.menu-card-img {
+  width: 100%;
+  height: 150px;
+  display: block;
+}
+
+.menu-card:hover {
+  transform: scale(1.03);
+  cursor: pointer;
+}
+
+.dish-name {
+  padding: 1rem;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+  color: black;
+}
+
+/* xd2 */ 
+.contact-section {
+  padding: 3rem 1rem;
+  margin-top: 4.5rem;
+  background-color: #DFE9F5;
+  text-align: center;
+  animation: fadeIn 0.5s ease-in-out; 
+}
+
+.contact-title {
+  font-size: 3rem;
+  font-family: "Carter One", sans-serif;
+  margin-bottom: 0.5rem;
+}
+
+.contact-subtitle {
+  font-size: 1.1rem;
+  color: #555;
+  max-width: 700px;
+  margin: 0 auto 2.5rem ;
+  font-family: "Roboto", sans-serif;
+}
+
+.contact-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.contact-card {
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  width: 280px;
+  text-align: left;
+  transition: transform 0.2s ease;
+}
+
+.contact-card:hover {
+  transform: translateY(-5px);
+}
+
+.card-icon {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.card-title {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  font-family: "Poiret One", sans-serif;
+  color: #1a1a1a;
+}
+
+.card-desc {
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 1rem;
+  font-family: "Roboto", sans-serif;
+}
+
+.card-link {
+  color: #0868a7;
+  font-weight: 600;
+  font-size: 0.95rem;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+}
+
+.card-link:hover {
+  text-decoration: underline;
+}
